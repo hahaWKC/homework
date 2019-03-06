@@ -1,0 +1,8 @@
+*{margin: 0;padding: 0;}
+        .hd{
+            height: 70px;
+            background: #18BEBE url("../../img/title.png") no-repeat center center;
+            background-size: 70%;
+        }
+        .header{background: #F5F5F5}
+

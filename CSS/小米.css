@@ -1,0 +1,134 @@
+*{margin: 0;padding: 0;}
+.hd{
+    height: 50px;
+    background: white;
+    padding: 25px;
+}
+
+.hd .img{
+    width: 48px;
+    height: 48px;
+    background-color: #F56600;
+    float: left;
+    margin-left: 170px;
+    border-radius: 5%
+}
+.hd img{
+    width: 48px;
+}
+.title{
+    float: left;
+    font-size: 10px;
+    margin-left: 25px;
+    margin-top: -6px;
+    color: #333333;
+}
+.title .one{
+    font-size: 32px;
+}
+.body{
+    height: 555px;
+    background:url(../img/553c5e503fc83138c76bd7c17c1434db.jpeg) no-repeat center;
+    width: 1518px;
+}
+
+.form{
+    margin-top: 30px;
+    width:410px;
+    height: 525px;
+    margin-right: 195px;
+    text-align: center;
+    background:#fff;
+    overflow:hidden;
+    float: right;
+}
+input{width:336px;padding:8px;outline: none;height:30px;border:1px solid #e0e0e0}
+.login{font-size: 24px;margin-top:30px;margin-bottom: 30px;}
+.login span{color:#e0e0e0}
+.login span.active{color:#f56600;margin-right: 40px;}
+.login span.saoma{margin-left: 40px;color:#333}
+.phone{
+    margin-bottom: 15px;}
+.password{margin-bottom: 20px;}
+.submit input{width:352px;height:50px;background:#f56600;color:white;font-size: 18px;margin-bottom: 10px;}
+.xinxi{
+    height: 27px;
+    width: 380px;
+    margin-bottom: 130px;
+}
+.duanxin{
+    margin-left: -70px;
+    font-size: 14px;
+}
+.duanxin a{
+    color:#FF812B;
+    text-decoration: none;
+}
+.register{
+    font-size: 13px;
+    float: right;
+    color:#CCCCCC;
+}
+.register a{
+    color:#CCCCCC;
+    text-decoration: none;
+}
+.footer{
+    width:352px;margin-left:auto;margin-right:auto;
+}
+.footer .qita{position:relative;color:#D7D7D7;font-size: 14px;}
+.qita .left,.right{position:absolute;display: block;width:125px;height:1px;background:#EFEFEF;top:50%}
+.right{right:0}
+.AllIcon{overflow: hidden;margin-bottom: 30px;}
+.AllIcon{
+    width:410px;
+    overflow: hidden;
+}
+.AllIcon a{
+    display:block;
+    width:50px;
+    height:50px;
+    background:white;
+    text-decoration: none;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    top: 10px;left: 50px;
+}
+.AllIcon .icon1{
+    font-size: 35px;
+    color: #0288D1;
+}
+.AllIcon .icon2{
+    font-size: 35px;
+    color: #D32F2F;
+}
+.AllIcon .icon3{
+    font-size: 35px;
+    color: #00AAEE;
+}
+.AllIcon .icon4{
+    font-size: 35px;
+    color: #00D20D;
+}
+
+.bottom{
+    margin-top: 100px;
+    font-size: 14px;
+    text-align: center;
+    color:#666;
+}
+.bottom a{
+    text-decoration: none;
+    color:#666;
+    display: inline-block;     
+}
+.first{
+    margin-bottom: 10px;
+}
+.first>a{
+    margin: 0 1px;
+}
+.second>a{
+    margin-bottom: 30px;
+}
