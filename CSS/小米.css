@@ -43,18 +43,44 @@
     float: right;
 }
 input{width:336px;padding:8px;outline: none;height:30px;border:1px solid #e0e0e0}
-.login{font-size: 24px;margin-top:30px;margin-bottom: 30px;}
-.login span{color:#e0e0e0}
-.login span.active{color:#f56600;margin-right: 40px;}
-.login span.saoma{margin-left: 40px;color:#333}
+.login{font-size: 24px;margin-top:30px;margin-bottom: 30px;margin-left: -20px;}
+.login span{color:#333;margin-right: auto;margin-left: auto;}
+.login span.active{color:#f56600;}
+.login span.ma{margin-left: 100px;}
+.login span.ma:hover{color:#f56600;}
 .phone{
     margin-bottom: 15px;}
 .password{margin-bottom: 20px;}
 .submit input{width:352px;height:50px;background:#f56600;color:white;font-size: 18px;margin-bottom: 10px;}
+.saomao{
+    display: none;
+}
+.saomao img{
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+.saomao p{
+    font-size: 15px;
+    color: #949494;
+}
+.saomao p a{
+    color: red;
+    text-decoration: none;
+}
+.nav span{
+    cursor: pointer;
+}
+.login p{
+    float: left;
+    position: relative;
+    left: 50%;
+    color: #e0e0e0;
+}
+
+
 .xinxi{
     height: 27px;
     width: 380px;
-    margin-bottom: 130px;
 }
 .duanxin{
     margin-left: -70px;
@@ -74,7 +100,7 @@ input{width:336px;padding:8px;outline: none;height:30px;border:1px solid #e0e0e0
     text-decoration: none;
 }
 .footer{
-    width:352px;margin-left:auto;margin-right:auto;
+    width:352px;position: absolute;bottom:25px;right:214px;
 }
 .footer .qita{position:relative;color:#D7D7D7;font-size: 14px;}
 .qita .left,.right{position:absolute;display: block;width:125px;height:1px;background:#EFEFEF;top:50%}

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../CSS/小米.css" type="text/css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_1066530_0aqgwdg6axyj.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <link rel="icon" href="../img/icon.png" type="image/x-icon">
     <title>小米账号 - 登录</title>
 </head>
@@ -22,13 +23,16 @@
     </div>
     <div class="body">
             <div class="form">
-                    <form>
-                        <p class="login">
-                            <span class="active">账号登录</span>
-                            <span>丨</span>
-                            <span class="saoma">扫码登录</span>
-                        </p>
-                        <p class="phone">
+                    <div class="nav">
+                        <div class="login">
+                            <span class="active">帐号登录</span>
+                            <span class="ma">扫码登录</span>
+                            <p>丨</p>
+                        </div>
+
+                        <div class="form-content">
+                            <div class="account">
+                            <p class="phone">
                             <input type="text" placeholder="邮箱/手机号/小米ID"/>
                         </p>
                         <p class="password">
@@ -37,20 +41,15 @@
                         <p class="submit">
                             <input type="submit" value="登录"/>
                         </p>
-                    </form>
-                    <div class="xinxi">
+                        <div class="xinxi">
                         <p class="register">
                         <span><a href="#">立即注册</a></span>
                         <span>|</span>
                         <span><a href="#">忘记密码?</a></span>
                         </p>
-                        <div class="duanxin">
-                        <a href="#">手机短信登录/注册</a>
-                    </div>
-                    </div>
-                    
-                    
-                    <div class="footer">
+                        <div class="duanxin"><a href="#">手机短信登录/注册</a></div>
+                        </div>
+                        <div class="footer">
                         <p class="qita">
                             <span class="left"></span>
                             其他方式登录
@@ -63,6 +62,19 @@
                             <a href="#" ><i class="iconfont icon4">&#xe652;</i></a>
                         </div>
                     </div>
+
+                        </div>  
+
+                        <div class="saomao">
+                            <img src="../img/扫码.png" alt="">
+                            <p>使用 <a>小米商城APP</a> 扫一扫</p>
+                            <p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+                        </div>
+
+                        
+                    </div>
+                    </div>
+
                 </div>
     </div>
 
@@ -83,7 +95,14 @@
                     <a href="../index.html"><img class="ghs" src="../img/ghs.png">京公网安备11010802020134号</a>
                     -京ICP证110507号
                 </div>
-
     </div>
+
+    <script>
+        $(".nav span").click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+            console.log($(this).index())
+            $(".form-content>div").eq($(this).index()).show().siblings().hide()
+        })
+    </script>
 </body>
 </html>
