@@ -1,0 +1,87 @@
+*{margin: 0;padding: 0;}
+body{background: url("../../img/bg.jpg") no-repeat;background-size: cover;background-attachment: scroll;}
+#canvas{opacity: 0.4;background: none;}
+@keyframes animate{
+    0%{
+       background: #333;
+    }
+    25%{
+        background: red;
+        width:25%;
+    }
+    50%{
+        background: blue;
+        width:50%;
+    }
+    70%{
+        background: yellow;
+        width:70%;
+    }
+    100%{
+        background:green;
+        width:100%;
+    }
+}
+.audio{ 
+    /*设置音乐显示位置*/
+        width:45px;
+        position:fixed;top:65px;left:94%;
+        z-index:100;
+        filter:alpha(opacity=30);  
+          -moz-opacity:0.3;  
+          -khtml-opacity: 0.3;  
+          opacity: 0.3;
+        }
+.menu{position: absolute;float: left;top: -8px;}
+.title{height: 300px;}
+a{text-decoration: none;color: beige;}
+
+.hd .line{
+    animation: animate 2s infinite;
+    width:0;
+    height:1px;
+    margin-bottom: 20px;
+}
+.hd{
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border: 1px solid #1E1D38;
+    border-radius: 5%;
+    background-color: rgb(32, 167, 195,0.2);
+    text-align: center;
+}
+.hd p{
+    color: antiquewhite;
+    font: 18px;
+    line-height: 30px;
+}
+.body{width: 1500px;margin: 0 auto;z-index: 1;}
+.body div{
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+    float: left;
+    transition: all 1s;
+}
+.body div:hover{transform: translateY(-10px);}
+.xing1{
+    left: 240px;
+    top: 145px;
+}
+.xing2{
+    left: 295px;
+    top: 130px;
+}
+.xing3{
+    left: 480px;
+    top: 160px;
+}
+.xing4{
+    left: 740px;
+    top: 205px;
+}
+.xing5{
+    left: 820px;
+    top: 15px;
+}

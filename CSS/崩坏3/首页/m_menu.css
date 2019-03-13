@@ -1,0 +1,38 @@
+.m_menu{
+    width:1036px;
+    margin-left:auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.m_menu>div{
+    width:250px;
+    height:350px;
+    box-sizing: border-box;
+    background: #EBEBEB;
+    border: 1px solid #BABDC1;
+    float:left;
+}
+.m_menu>div:not(:last-child){
+    margin-right:12px;
+}
+.m_menu .img{
+    text-align: center;
+}
+.m_menu img{
+    width: 220px;
+    height: 230px;
+}
+.introduce{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.introduce ul:hover a{
+    color: orange;
+}
+.introduce .big{
+    margin: 5px 0;
+}
+.introduce .big .a1{
+    font-size: 20px;
+}

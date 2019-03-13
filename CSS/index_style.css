@@ -1,0 +1,111 @@
+
+body {margin:0 auto;overflow:hidden;}  
+
+/*=============第一页=============*/	
+.header{
+	margin:0 auto;
+	width:100%;
+	height:640px;
+	background-color:#000;
+	position:relative;
+	}
+.header canvas {
+	width:100%;height:auto;/*默认全屏显示 可自己设置高度640px*/;
+	display:inline-block;vertical-align:baseline
+	position:absolute;
+	z-index:-1;
+	}
+.header .canvaszz{  /*用来解决视频右键菜单，用于视频上面的遮罩层*/
+	width:100%;
+	background-image: url(../img/bg.jpg);
+	height:840px;
+	position:absolute;
+	z-index:10;
+		filter:alpha(opacity=40);  
+      	-moz-opacity:0.3;  
+      	-khtml-opacity: 0.3;  
+      	opacity: 0.2;
+	}
+
+.audio{ 
+/*设置音乐显示位置*/
+	width:45px;
+	position:fixed;top:65px;left:94%;
+	z-index:100;
+	filter:alpha(opacity=30);  
+      -moz-opacity:0.3;  
+      -khtml-opacity: 0.3;  
+      opacity: 0.3;
+	}
+.header .top_logo{
+	cursor: pointer;
+	margin:0 auto;
+	width:390px;
+	height:390px;
+	border-radius: 50%;
+	position:absolute;
+	z-index:30;
+	top:130px;
+	left: 50%;
+	margin-left: -195px;
+	transition: all 1s;
+	}	
+.header .top_logo:hover{
+	transform: translateY(-20px);
+	transform:scale(1.5,1.5);
+    box-shadow: 0 0 10px 7px white;
+}
+.header .top_logo img{
+	width: 390px;
+	-webkit-transform: rotate(360deg);
+	animation: rotation 5S linear infinite;
+	-moz-animation: rotation 5S linear infinite;
+	-webkit-animation: rotation 5S linear infinite;
+	-o-animation: rotation 5S linear infinite;
+}
+@-webkit-keyframes rotation{
+	from {-webkit-transform: rotate(0deg);}
+	to{-webkit-transform: rotate(360deg);}
+}
+.header .nav{
+	width:804px;
+	height:auto;
+	position:absolute;
+	z-index:30;
+	top:620px;
+	left: 50%;
+	margin-left: -400px;
+	}
+.header .nav a.gv { 
+	text-decoration:none; 
+	background:url(img/nav_gv.png) repeat 0px 0px; 
+	width: 130px; 
+	height: 43px; 
+	display: block; 
+	text-align:center;		/*水平居中*/
+	line-height:43px;  /*上下居中*/
+	cursor:pointer;
+	float:left;/*左浮动*/
+	margin:8px 2px 8px 2px;
+	font:18px/43px 'microsoft yahei'; color:#066197;
+	}
+.header .nav a.gv span {
+	 display: none;
+	 	
+}
+.header .nav a.gv:hover { 
+	background: url(img/nav_gv.png) repeat 0px -43px; 
+	color:#1d7eb8;
+	-webkit-box-shadow: 0 0 6px #1d7eb8;
+	transition-duration: 0.5s;
+	}
+	
+.header	.topcn{
+	width: 980px;
+	top:200px;
+	left: 50%;
+	margin-left: -490px;
+	position:absolute;
+	z-index:20;
+
+	}
