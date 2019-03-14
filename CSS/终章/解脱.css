@@ -64,7 +64,7 @@ a{text-decoration: none;color: beige;}
     float: left;
     transition: all 1s;
 }
-.body div:hover{transform: translateY(-10px);}
+.body div:hover{transform: scale(1.5,1.5);}
 .xing1{
     left: 240px;
     top: 145px;
