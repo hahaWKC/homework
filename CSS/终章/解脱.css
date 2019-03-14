@@ -33,29 +33,17 @@ body{background: url("../../img/bg.jpg") no-repeat;background-size: cover;backgr
           opacity: 0.3;
         }
 .menu{position: absolute;float: left;top: -8px;}
-.title{height: 300px;}
+.title{height:340px;}
 a{text-decoration: none;color: beige;}
 
-.hd .line{
-    animation: animate 2s infinite;
-    width:0;
-    height:1px;
-    margin-bottom: 20px;
-}
 .hd{
-    width: 300px;
-    height: 300px;
-    margin: 20px auto;
-    border: 1px solid #1E1D38;
+    width: 500px;
+    height: 500px;
+    margin: -20px auto ;
     border-radius: 5%;
-    background-color: rgb(32, 167, 195,0.2);
     text-align: center;
 }
-.hd p{
-    color: antiquewhite;
-    font: 18px;
-    line-height: 30px;
-}
+
 .body{width: 1500px;margin: 0 auto;z-index: 1;}
 .body div{
     text-align: center;
@@ -64,7 +52,7 @@ a{text-decoration: none;color: beige;}
     float: left;
     transition: all 1s;
 }
-.body div:hover{transform: scale(1.5,1.5);}
+.body div:hover{transform: scale(1.5)}
 .xing1{
     left: 240px;
     top: 145px;
