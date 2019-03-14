@@ -9,15 +9,15 @@
 </head>
 <body>
     <canvas id="canvas">    </canvas>
-    <div class="menu">
+    <div class="menu" id="mydiv">
         <div class="title">
             <div class="hd">
                 <img src="../../img/light_bulb.png" alt="">
                 <div class="line"></div>
-                <p>浩瀚的宇宙为舞台</p>
-                <p>深邃的夜幕为帘</p>
-                <p>一颗颗流星在台前划过</p>
-                <p>那幕布后又隐藏着什么呢</p>
+                <p>你是寄情于刹那的流星</p>
+                <p>还是醉心于星座的找寻</p>
+                <p>亦或是寻找光年之外</p>
+                <p>星河背后的秘密</p>
             </div>
         </div>
         <div class="body">
@@ -50,7 +50,7 @@
             var ctx = can.getContext("2d");//设置绘图环境
             var w = can.width = window.innerWidth;//把窗口的宽度赋值给画布
             var h = can.height = window.innerHeight;//把窗口的高度赋值给画布
-            var count = 80;//雨滴的个数
+            var count = 50;//雨滴的个数
             var drops = [];//定义一个空数组来保存雨滴个数
             //浏览器窗口改变的时候重新获取宽度
             window.onresize = function(){
@@ -68,7 +68,7 @@
                     this.vx = random(3,4);//竖直方向的加速度
                     this.a = 1;//初始透明度
                     this.va = 0.96;//透明度的变化系数
-                    this.l = random(h*0.4,h*1.1);//雨滴下落的高度
+                    this.l = random(h*0.6,h*1.1);//雨滴下落的高度
                 },
                 draw : function(){
                     if (this.y > this.l)
@@ -138,5 +138,27 @@
                 return "white"
             }
         </script>
+
+<script type="text/javascript">
+    window.onload = function() {
+        //配置
+        var config = {
+            vx: 4,	//小球x轴速度,正为右，负为左
+            vy: 4,	//小球y轴速度
+            height: 2,	//小球高宽，其实为正方形，所以不宜太大
+            width: 2,
+            count: 150,		//点个数
+            color: "121, 162, 185", 	//点颜色
+            stroke: "130,255,255", 		//线条颜色
+            dist: 6000, 	//点吸附距离
+            e_dist: 20000, 	//鼠标吸附加速距离
+            max_conn: 10	//点到点最大连接数
+        }
+  
+        //调用
+        CanvasParticle(config);
+    }
+  </script>
+  <script type="text/javascript" src="../../js/canvas-particle.js"></script>
 </body>
 </html>
