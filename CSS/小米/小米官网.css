@@ -46,7 +46,7 @@ li{list-style: none;}
 .gou a{
     color: #998ca7;
 }
-.che a{
+.che .bt{
     float: right;
     position: relative;
     display: block;
@@ -99,7 +99,20 @@ li{list-style: none;}
     color: black;
     position: relative;
 }
-
+.che .ft{
+    float: right;
+}
+.ft a{
+    position: relative;
+    float: right;
+    display: block;
+    font-size: 12px;
+    background-color: #fafafa;
+    color:#464E54;
+    top: -30px;
+    right: 60px;
+    margin: 0 5px;
+}
 .nav{
     width: 1240px;
     margin-left: auto;
@@ -250,6 +263,7 @@ li{list-style: none;}
 
 #btns>span{
     cursor: pointer;
+    line-height: 25px;
     text-align: center;
     color: black;
     width:25px;
