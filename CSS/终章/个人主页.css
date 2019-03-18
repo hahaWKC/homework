@@ -19,7 +19,7 @@
     margin: 20px auto;
 }
 .hd1 img{width: 100px; height: 100px;}
-.hd1 .word{width: 500px;float: right;position: relative;top: 20px;}
+.hd1 .word{width: 760px;float: right;position: relative;}
 .hd1 p{
     color: antiquewhite;
     font: 18px;
@@ -27,8 +27,8 @@
 }
 .nav{width: 1000px;margin: 0 auto;}
 .nav .left,.mid,.right{height: 200px;width: 300px;float: left;}
-.nav .mid img,.right img{height: 200px;width: 300px;}
-.mid{margin: 0 50px;}
+.nav .mid img,.right img{height: 190px;width: 290px;}
+.mid{margin-right:50px;}
 .left p{
     color: antiquewhite;
     font: 18px;
