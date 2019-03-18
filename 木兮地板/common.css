@@ -1,0 +1,14 @@
+.home-cetent{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+*{margin: 0;padding: 0;}
+.row{
+    clear: both;
+}
+.touch:hover{
+    color: #2dae36;
+    text-decoration: none;
+}
