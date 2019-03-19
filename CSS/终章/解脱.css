@@ -1,5 +1,6 @@
 *{margin: 0;padding: 0;}
-body{background: url("../../img/bg.jpg") no-repeat;background-size: cover;background-attachment: scroll;}
+body{background: url("../../img/bg.jpg") no-repeat;background-size: cover;background-attachment: scroll;cursor:url('../../img/point3.png'),auto;}
+a{cursor:url('../../img/point4.png'),pointer;}
 #canvas{opacity: 0.4;background: none;}
 @keyframes animate{
     0%{

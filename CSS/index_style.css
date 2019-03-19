@@ -1,6 +1,6 @@
 
-body {margin:0 auto;overflow:hidden;}  
-
+body {margin:0 auto;overflow:hidden;cursor:url('../img/point2.png'),auto;}  
+a{cursor:url('../img/point1.png'),pointer;}
 /*=============第一页=============*/	
 .header{
 	margin:0 auto;
@@ -84,7 +84,6 @@ body {margin:0 auto;overflow:hidden;}
 	display: block; 
 	text-align:center;		/*水平居中*/
 	line-height:43px;  /*上下居中*/
-	cursor:pointer;
 	float:left;/*左浮动*/
 	margin:8px 2px 8px 2px;
 	font:18px/43px 'microsoft yahei'; color:#066197;

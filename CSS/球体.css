@@ -6,6 +6,7 @@ BODY {
     overflow: hidden;
     font-size: 14px;
     background-size: 2rem 100%;
+    cursor:url('../img/point3.png'),auto;
   }
   
   .container {
