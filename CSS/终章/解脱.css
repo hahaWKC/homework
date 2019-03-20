@@ -29,8 +29,8 @@ a{cursor:url('../../img/point4.png'),pointer;}
 a{text-decoration: none;color: beige;}
 .bgs{position: absolute;left: 90%;top: 0;z-index: 10;width: 100px;height: 100px;}
 .hd{
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     margin: -20px auto ;
     border-radius: 5%;
     text-align: center;
