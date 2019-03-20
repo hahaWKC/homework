@@ -23,20 +23,11 @@ a{cursor:url('../../img/point4.png'),pointer;}
         width:100%;
     }
 }
-.audio{ 
-    /*设置音乐显示位置*/
-        width:45px;
-        position:fixed;top:65px;left:94%;
-        z-index:100;
-        filter:alpha(opacity=30);  
-          -moz-opacity:0.3;  
-          -khtml-opacity: 0.3;  
-          opacity: 0.3;
-        }
+
 .menu{position: absolute;float: left;top: -8px;}
 .title{height:340px;}
 a{text-decoration: none;color: beige;}
-
+.bgs{position: absolute;left: 90%;top: 0;z-index: 10;width: 100px;height: 100px;}
 .hd{
     width: 500px;
     height: 500px;
@@ -44,8 +35,9 @@ a{text-decoration: none;color: beige;}
     border-radius: 5%;
     text-align: center;
 }
-
-.body{width: 1500px;margin: 0 auto;z-index: 1;}
+iframe:hover{transform: scale(1.5);}
+iframe{transition: all 1s;}
+.body{width: 1500px;margin: 20px auto;z-index: 1;}
 .body div{
     text-align: center;
     font-size: 13px;
