@@ -50,7 +50,29 @@
 
 <audio preload="auto" src="img/click.ogg" id="z"></audio>
 <script>var y=document.getElementById('z');</script>
-
+<!--音效-->
+<script src="js/jquery-canvas-sparkles.min.js"></script>
+	<script src="js/jquery-canvas-sparkles.js"></script>
+	<script type="text/javascript">
+		$(".top_logo").sparkle({
+			color: "#FFFFFF",
+			count: 150,
+			overlap: 0,
+			speed: 1.5,
+			minSize: 4,
+			maxSize: 10,
+			direction: "both"
+		});
+		$(".nav").sparkle({
+			color: "#FFFFFF",
+			count: 100,
+			overlap: 0,
+			speed: 1.5,
+			minSize: 4,
+			maxSize: 10,
+			direction: "both"
+		});
+  </script>
 
 
 <script>
@@ -158,27 +180,6 @@ function animation() {
 
 animation();
 </script>
-<script src="dist/jquery-canvas-sparkles.min.js"></script>
-	<script src="dist/jquery-canvas-sparkles.js"></script>
-	<script type="text/javascript">
-		$(".top_logo").sparkle({
-			color: "#FFFFFF",
-			count: 150,
-			overlap: 0,
-			speed: 1.5,
-			minSize: 4,
-			maxSize: 10,
-			direction: "both"
-		});
-		$(".nav").sparkle({
-			color: "#FFFFFF",
-			count: 100,
-			overlap: 0,
-			speed: 1.5,
-			minSize: 4,
-			maxSize: 10,
-			direction: "both"
-		});
-  </script>
+
 </body>
 </html>
