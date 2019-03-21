@@ -26,8 +26,7 @@ a{cursor:url('../../img/point4.png'),pointer;}
 
 .menu{position: absolute;float: left;top: -8px;}
 .title{height:340px;}
-a{text-decoration: none;color: beige;}
-.bgs{position: absolute;left: 90%;top: 0;z-index: 10;width: 100px;height: 100px;}
+a{text-decoration: none;color: lightsteelblue;}
 .hd{
     width: 450px;
     height: 450px;
@@ -66,3 +65,8 @@ iframe{transition: all 1s;}
     left: 820px;
     top: 15px;
 }
+
+.menu.blur{-webkit-filter:blur(8px);}
+.popus{width:600px;color: bisque;position:fixed;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);font-family:"微软雅黑";padding:20px 0px;font-weight:bold;background-color:rgba(255,255,255,0.2);border-radius:18px;text-align:center;padding:30px 0px;box-shadow:0px 0px 10px rgba(0,0,0,0.4);display: none;}
+.popus div{width: 600px;margin-top: 10px;}
+.popus .bgs{width: 100px;float: left;}

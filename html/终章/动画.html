@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../css/终章/解脱.css" type="text/css">
     <link rel="icon" href="../../img/六芒星.png" type="image/x-icon">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <title>夜幕星河</title>
 </head>
 <body>
     <canvas id="canvas">    </canvas>
     <div class="menu" id="mydiv">
         <div class="title">
-            <div class="hd" onmouseover="k.play(),y.pause()">
+            <div class="hd">
                 <iframe frameborder="0" scrolling="no" src="index2.html" width="100%" height="500px"></iframe>
             </div>
         </div>
@@ -33,19 +34,71 @@
                 <a href="北极星.html">北极星的魅力</a>
             </div>
         </div>
-        <div class="bgs" onmouseover="y.play(),k.pause()"><img src="../../img/light_bulb.png" style="widows: 90px;"></div>
     </div>
+
+
+    <div class='popus'>
+        更换BGM
+        <div>
+            <div class="bgs" onmouseover="y1.play(),y2.pause(),y3.pause(),y4.pause(),y5.pause(),y6.pause()">
+                <img src="../../img/bgm01.png" style="width: 90px;">
+                <p>月牙湾</p>
+            </div>
+            <div class="bgs" onmouseover="y2.play(),y1.pause(),y3.pause(),y4.pause(),y5.pause(),y6.pause()">
+                <img src="../../img/bgm02.png" style="width: 90px;">
+                <p>雪落下的声音</p>
+            </div>
+            <div class="bgs" onmouseover="y3.play(),y2.pause(),y1.pause(),y4.pause(),y5.pause(),y6.pause()">
+                <img src="../../img/bgm03.png" style="width: 90px;">
+                <p>安静</p>
+            </div>
+            <div class="bgs" onmouseover="y4.play(),y2.pause(),y3.pause(),y1.pause(),y5.pause(),y6.pause()">
+                <img src="../../img/bgm04.png" style="width: 90px;">
+                <p>像我这样的人</p>
+            </div>
+            <div class="bgs" onmouseover="y5.play(),y2.pause(),y3.pause(),y4.pause(),y1.pause(),y6.pause()">
+                <img src="../../img/bgm05.png" style="width: 90px;">
+                <p>白月光</p>
+            </div>
+            <div class="bgs" onmouseover="y6.play(),y2.pause(),y3.pause(),y4.pause(),y5.pause(),y1.pause()">
+                <img src="../../img/bgm06.png" style="width: 90px;">
+                <p>爱你</p>
+            </div>
+        </div>
+     </div>
     
     <!--音乐 START-->
-	<audio src="../../CSS/终章/月牙湾 (Live).mp3" id="l"></audio>
-    <script>var k=document.getElementById('l');</script>
-
     <audio src="../../img/shine.ogg" id="e"></audio>
     <script>var x=document.getElementById('e');</script>
-    <audio src="../../CSS/终章/林俊杰 - 雪落下的声音 (Live).flac" id="z"></audio>
-    <script>var y=document.getElementById('z');</script>
-<!--音乐 END-->
 
+    <audio src="../../CSS/终章/月牙湾 .mp3" id="l1"></audio>
+    <script>var y1=document.getElementById('l1');</script>
+    <audio src="../../CSS/终章/雪落下的声音.flac" id="l2"></audio>
+    <script>var y2=document.getElementById('l2');</script>
+    <audio src="../../CSS/终章/安静.flac" id="l3"></audio>
+    <script>var y3=document.getElementById('l3');</script>
+    <audio src="../../CSS/终章/像我这样的人 .flac" id="l4"></audio>
+    <script>var y4=document.getElementById('l4');</script>
+    <audio src="../../CSS/终章/白月光 .flac" id="l5"></audio>
+    <script>var y5=document.getElementById('l5');</script>
+    <audio src="../../CSS/终章/爱你 .flac" id="l6"></audio>
+    <script>var y6=document.getElementById('l6');</script>
+    <!--音乐 END-->
+
+
+    <!--小球-->
+    <script>
+        $('.title').on('click',function(){
+        console.log(98)
+        $('.menu').addClass('blur');
+        $('.popus').show();
+      })
+        $('.popus').on('click',function(){
+        $('.menu').removeClass('blur');
+        $('.popus').hide();
+      })
+    </script>
+    <!--小球-->
 
     <script>
             var can = document.getElementById("canvas");
